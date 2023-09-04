@@ -12,6 +12,9 @@ class GetPlanFactory {
 		} else if (planType.equalsIgnoreCase("INSTITUTIONALPLAN")) {
 			return new InstitutionalPlan();
 		}
+		else if (planType.equalsIgnoreCase("sp")) {
+			return new Studenplan();
+		}
 		return null;
 	}
 }// end of GetPlanFactory class.
